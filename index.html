@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Classic Pong</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="game-wrap">
+    <header class="game-header">
+      <h1>Classic Pong</h1>
+      <div class="scoreboard">
+        <div class="score player-score" id="playerScore">0</div>
+        <div class="score sep">—</div>
+        <div class="score ai-score" id="aiScore">0</div>
+      </div>
+    </header>
+
+    <main class="game-main">
+      <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+      <div class="controls">
+        <button id="startBtn" class="btn">Start</button>
+        <button id="pauseBtn" class="btn">Pause</button>
+        <button id="resetBtn" class="btn">Reset</button>
+      </div>
+
+      <div class="instructions">
+        Controls: W / S or ↑ / ↓ to move left paddle.
+      </div>
+    </main>
+
+    <footer class="game-footer">
+      <small>Built with HTML, CSS & JavaScript — Classic arcade Pong</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
